@@ -1,0 +1,23 @@
+WidgetsExample:
+
+<WidgetsExample>:
+	orientation: "vertical"
+	canvas.before:
+		Color:
+			rgba: (1, 1, 1, 1)
+		Rectangle:
+			pos: self.pos
+			size: self.size
+	Image:
+		source: '8march.png' 
+		allow_stretch: True
+
+	BoxLayout:
+		Button:
+			text: 'Add kiss'
+			on_press: root.on_button_click() 
+
+		Label:
+			text: root.count_text
+			color: 0,0,0,1
+
